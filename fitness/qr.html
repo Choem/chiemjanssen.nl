@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Fitness</title>
+<meta name="theme-color" content="#0e1113">
+<link rel="icon" type="image/png" href="/fitness/img/icon-180.png">
+<link rel="stylesheet" href="/fitness/fitness.css">
+<script>
+// Printed QR codes point here: send each visitor to the page in their own language.
+(function () {
+  var pages = { nl: '/fitness/nl/', it: '/fitness/it/', en: '/fitness/' };
+  var langs = navigator.languages || [navigator.language || ''];
+  for (var i = 0; i < langs.length; i++) {
+    var page = pages[String(langs[i]).slice(0, 2).toLowerCase()];
+    if (page) { location.replace(page); return; }
+  }
+  location.replace(pages.en);
+})();
+</script>
+</head>
+<body>
+<div class="wrap">
+<main>
+<p><a href="/fitness/">English</a> · <a href="/fitness/nl/" lang="nl">Nederlands</a> · <a href="/fitness/it/" lang="it">Italiano</a></p>
+</main>
+</div>
+</body>
+</html>
