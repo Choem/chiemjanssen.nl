@@ -1,0 +1,141 @@
+/* Fitness pages: the app's Material 3 theme (dark-first, lime seed #9BE15D). */
+:root {
+  color-scheme: dark light;
+  --surface: #0e1113;
+  --surface-low: #161a16;
+  --card: #22271f;
+  --card-high: #2b3127;
+  --on-surface: #e3e6db;
+  --muted: #b9c1ae;
+  --outline: #343b30;
+  --primary: #7edd00;
+  --on-primary: #112000;
+  --tonal: #2e4a33;
+  --on-tonal: #cfeccb;
+  --accent-text: #9be15d;
+  --glow: rgba(126, 221, 0, .16);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --surface: #f8faf0;
+    --surface-low: #f0f3e6;
+    --card: #e9ecdf;
+    --card-high: #e1e5d6;
+    --on-surface: #1a1c16;
+    --muted: #464b3f;
+    --outline: #cdd3c2;
+    --primary: #3f6a00;
+    --on-primary: #ffffff;
+    --tonal: #cdebc3;
+    --on-tonal: #0f2a12;
+    --accent-text: #3f6a00;
+    --glow: rgba(110, 190, 20, .18);
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--surface);
+  background-image: radial-gradient(70rem 40rem at 85% -10%, var(--glow), transparent 70%);
+  background-repeat: no-repeat;
+  color: var(--on-surface);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow-wrap: break-word;
+}
+a { color: var(--accent-text); }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { max-width: 68rem; margin: 0 auto; padding: 0 1rem; }
+
+/* Top bar: app name + language switcher */
+.topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; padding: 1rem 0; }
+.brand { display: flex; align-items: center; gap: .6rem; color: var(--on-surface); font-weight: 700; text-decoration: none; font-size: 1.05rem; }
+.brand img { width: 2rem; height: 2rem; border-radius: .55rem; }
+nav.lang { display: flex; gap: .25rem; font-size: .9rem; }
+nav.lang a, nav.lang strong { padding: .3rem .7rem; border-radius: 999px; text-decoration: none; }
+nav.lang a { color: var(--muted); }
+nav.lang a:hover { background: var(--card); }
+nav.lang strong { background: var(--tonal); color: var(--on-tonal); font-weight: 600; }
+
+/* Hero */
+.hero { display: grid; gap: 2.5rem; align-items: center; padding: 2.5rem 0 3rem; }
+.hero-icon { width: 5.5rem; height: 5.5rem; border-radius: 1.4rem; box-shadow: 0 10px 40px var(--glow); margin-bottom: 1.5rem; }
+.hero h1 { font-size: clamp(2.4rem, 7vw, 4rem); line-height: 1.05; letter-spacing: -.03em; margin: 0 0 1rem; }
+.lead { font-size: clamp(1.15rem, 2.6vw, 1.4rem); color: var(--muted); margin: 0 0 2rem; max-width: 32rem; }
+.note { color: var(--muted); font-size: .92rem; margin: 1rem 0 0; }
+.hero-shot { justify-self: center; width: min(19rem, 80vw); }
+@media (min-width: 860px) {
+  .hero { grid-template-columns: 1.2fr 1fr; padding: 4rem 0 4.5rem; }
+}
+
+/* Store buttons, shaped like the app's filled / tonal buttons */
+.stores { display: flex; flex-wrap: wrap; gap: .75rem; }
+.store {
+  display: inline-flex; align-items: center; gap: .75rem;
+  min-height: 3.5rem; padding: .55rem 1.35rem .55rem 1.1rem;
+  border-radius: 1rem; text-decoration: none; line-height: 1.15;
+  transition: transform .15s ease, filter .15s ease;
+}
+.store:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.store:focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }
+.store svg { width: 1.7rem; height: 1.7rem; flex: none; fill: currentColor; }
+.store small { display: block; font-size: .75rem; opacity: .85; }
+.store strong { display: block; font-size: 1.1rem; font-weight: 650; }
+.store-primary { background: var(--primary); color: var(--on-primary); }
+.store-tonal { background: var(--tonal); color: var(--on-tonal); }
+
+/* Phone frame around a screenshot */
+.phone {
+  margin: 0; border-radius: 2.2rem; padding: .45rem;
+  background: var(--card-high); border: 1px solid var(--outline);
+  box-shadow: 0 20px 60px -20px rgba(0, 0, 0, .55), 0 0 50px -10px var(--glow);
+}
+.phone img { border-radius: 1.8rem; width: 100%; aspect-ratio: 660 / 1434; object-fit: cover; background: var(--surface); }
+
+/* Screenshot gallery */
+section { padding: 3rem 0; }
+h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); letter-spacing: -.02em; line-height: 1.15; margin: 0 0 .5rem; }
+.section-lead { color: var(--muted); margin: 0 0 2rem; max-width: 40rem; }
+.gallery {
+  display: grid; grid-auto-flow: column; grid-auto-columns: min(15rem, 70vw);
+  gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: .5rem 1rem 1.5rem; margin: 0 -1rem;
+  scrollbar-width: thin; scrollbar-color: var(--outline) transparent;
+}
+.gallery figure { margin: 0; scroll-snap-align: center; }
+.gallery figcaption { margin-top: .9rem; text-align: center; font-weight: 600; }
+.gallery figcaption span { display: block; color: var(--muted); font-weight: 400; font-size: .9rem; }
+
+/* Feature cards */
+.features { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); }
+.card { background: var(--card); border-radius: 1.25rem; padding: 1.5rem; }
+.card h3 { display: flex; align-items: center; gap: .65rem; font-size: 1.15rem; margin: 0 0 .75rem; }
+.card h3 svg { width: 1.5rem; height: 1.5rem; flex: none; fill: var(--accent-text); }
+.card p { margin: 0; color: var(--muted); }
+.card ul { margin: 0; padding: 0; list-style: none; color: var(--muted); }
+.card li { position: relative; padding-left: 1.2rem; margin: .35rem 0; }
+.card li::before { content: ""; position: absolute; left: 0; top: .62em; width: .45rem; height: .45rem; border-radius: 50%; background: var(--primary); }
+
+/* Closing call to action */
+.cta { text-align: center; background: var(--card); border-radius: 1.75rem; padding: 2.5rem 1.25rem; margin: 1rem 0 0; }
+.cta .stores { justify-content: center; }
+.cta p { color: var(--muted); margin: 0 auto 1.5rem; max-width: 34rem; }
+
+footer { border-top: 1px solid var(--outline); margin-top: 3rem; padding: 1.5rem 0 3rem; color: var(--muted); font-size: .92rem; }
+footer p { margin: .35rem 0; }
+footer a { color: var(--muted); }
+
+/* Privacy policy: the text as a themed document */
+.doc { max-width: 46rem; margin: 1rem auto 0; background: var(--surface-low); border: 1px solid var(--outline); border-radius: 1.5rem; padding: 2rem 1.25rem; }
+@media (min-width: 640px) { .doc { padding: 2.75rem 3rem; } }
+.doc h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.15; letter-spacing: -.02em; margin: 0 0 .25rem; }
+.doc h2 { font-size: 1.2rem; letter-spacing: 0; margin: 2.25rem 0 .5rem; }
+.doc .muted { color: var(--muted); font-size: .95rem; }
+.doc .summary { background: var(--card); border-left: 4px solid var(--primary); border-radius: .75rem 1rem 1rem .75rem; padding: 1rem 1.25rem; margin: 1.75rem 0; }
+.doc ul { padding-left: 1.25rem; }
+.doc li::marker { color: var(--accent-text); }
+.doc code { background: var(--card); border-radius: .35rem; padding: .1rem .35rem; font-size: .9em; }
+.doc footer { margin-top: 2.5rem; padding-bottom: 0; }
+
+@media (prefers-reduced-motion: reduce) { .store { transition: none; } .store:hover { transform: none; } }
