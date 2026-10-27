@@ -3,17 +3,88 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chiem Janssen</title>
-<link rel="stylesheet" href="/style.css">
+<title>Chiem Janssen: technical mind, creative hands</title>
+<meta name="description" content="Software engineer from the Netherlands. Apps, platforms and interactive art: Fitness, Reef, Debugged, Localeo and D-care.">
+<meta name="theme-color" content="#07090c">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="canonical" href="https://chiemjanssen.nl/">
+<link rel="alternate" hreflang="en" href="https://chiemjanssen.nl/">
+<link rel="alternate" hreflang="nl" href="https://chiemjanssen.nl/nl/">
+<link rel="alternate" hreflang="it" href="https://chiemjanssen.nl/it/">
+<link rel="alternate" hreflang="x-default" href="https://chiemjanssen.nl/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chiem Janssen: technical mind, creative hands">
+<meta property="og:description" content="Software engineer from the Netherlands. Apps, platforms and interactive art: Fitness, Reef, Debugged, Localeo and D-care.">
+<meta property="og:image" content="https://chiemjanssen.nl/assets/og-en.jpg">
+<meta property="og:url" content="https://chiemjanssen.nl/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="/site.css">
+<script type="module" src="/assets/field.js"></script>
 </head>
 <body>
+<canvas class="field" data-preset="current" aria-hidden="true"></canvas>
+<div class="page">
+<div class="wrap">
+<header class="topbar">
+<a class="brand" href="/"><img src="/assets/logo.svg" width="34" height="34" alt="">Chiem Janssen</a>
+<nav class="lang"><strong><span class="full">English</span><span class="short">EN</span></strong><a href="/nl/" hreflang="nl" lang="nl" aria-label="Nederlands"><span class="full">Nederlands</span><span class="short">NL</span></a><a href="/it/" hreflang="it" lang="it" aria-label="Italiano"><span class="full">Italiano</span><span class="short">IT</span></a></nav>
+</header>
 <main>
-<h1>Chiem Janssen</h1>
-<p class="muted">The Netherlands</p>
-<h2><a href="/fitness/">Fitness</a></h2>
-<p>A fitness app for Android and iPhone: workouts, weight and meals, with all your data on your phone. <a href="/fitness/">See the app</a>.</p>
-<p>Privacy policy: <a href="/fitness/privacy/">English</a> &middot; <a href="/fitness/privacy/nl/">Nederlands</a> &middot; <a href="/fitness/privacy/it/">Italiano</a></p>
-<footer class="muted"><a href="mailto:chiemjanssen@gmail.com">chiemjanssen@gmail.com</a></footer>
+<section class="hero" data-field="ink">
+<p class="kicker">Software engineer, the Netherlands</p>
+<h1>Chiem<br>Janssen</h1>
+<p class="tagline">Technical mind, creative hands.</p>
+<a class="scroll-cue" href="#work">See the work</a>
+</section>
+
+<section class="block" id="work">
+<h2 class="label">Work</h2>
+<article class="project fitness" data-field="fitness">
+<div>
+<div class="project-head"><img src="/fitness/img/icon.webp" width="56" height="56" alt=""><div><p class="project-kind">App for iPhone and Android</p></div></div>
+<h3>Fitness</h3>
+<p class="body">Workouts, food and weight in one private app. A daily target that adapts to your progress, a coach that runs on your phone, and no account.</p>
+<a class="more" href="/fitness/">See the app</a>
+</div>
+<div class="project-media duo" role="img" aria-label="Screenshots of the Fitness app">
+<div class="phone"><img src="/fitness/img/en/02_today.webp" width="660" height="1434" loading="lazy" alt=""></div>
+<div class="phone"><img src="/fitness/img/en/01_body.webp" width="660" height="1434" loading="lazy" alt=""></div>
+</div>
+</article>
+<article class="project reef flip" data-field="reef">
+<div>
+<div class="project-head"><img src="/reef/img/icon-180.png" width="56" height="56" alt=""><div><p class="project-kind">Interactive installation</p></div></div>
+<h3>Reef</h3>
+<p class="body">An endless reef that visitors grow together. Answer a few questions and a real reef animal joins at its real depth. Beauty first, then what we do to the water.</p>
+<a class="more" href="/reef/">Discover Reef</a>
+</div>
+<div class="project-media"><div class="shot-wide"><img src="/reef/img/shallow.webp" width="1600" height="900" loading="lazy" alt="The shallow reef on a sunny day"></div></div>
+</article>
+</section>
+
+<section class="block" data-field="warm">
+<h2 class="label">Involvement</h2>
+<ul class="roles">
+<li><a href="https://debugged.nl" rel="noopener"><span class="org">Debugged</span><span class="role">Co-founder</span><span class="what">Software company in Eindhoven. Custom software, apps and cloud for businesses with a digital challenge.</span></a></li>
+<li><a href="https://localeo.app" rel="noopener"><span class="org">Localeo</span><span class="role">Founder</span><span class="what">Translations treated like software. Your team edits and approves in one place, then ships a versioned bundle your app pulls.</span></a></li>
+<li><a href="https://d-care.ai" rel="noopener"><span class="org">D-care</span><span class="role">Technical Lead</span><span class="what">AI and sensors that watch over sows day and night, so pig farmers act on heat and health in time. I lead the engineering and its delivery.</span></a></li>
+</ul>
+</section>
+
+<section class="contact" data-field="ink">
+<h2>Let's make something.</h2>
+<a class="mail" href="mailto:chiemjanssen@gmail.com">chiemjanssen@gmail.com</a>
+</section>
 </main>
+<footer>
+<span>&copy; Chiem Janssen</span>
+<a href="/fitness/privacy/">Fitness privacy policy</a>
+</footer>
+</div>
+</div>
 </body>
 </html>
