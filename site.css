@@ -124,13 +124,16 @@ section.block { padding: 5rem 0; }
 .roles { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .roles li { border-bottom: 1px solid var(--line); }
 .roles a {
-  display: grid; grid-template-columns: 1fr auto; gap: .35rem 1.5rem; align-items: baseline;
+  display: grid; grid-template-columns: 1fr auto; gap: .35rem 1.5rem; align-items: center;
   padding: 1.75rem 0; text-decoration: none;
 }
 @media (min-width: 800px) {
-  .roles a { grid-template-columns: 14rem 1fr 12rem; padding: 2.25rem 0; }
+  .roles a { grid-template-columns: 19rem 1fr 12rem; padding: 2.25rem 0; }
 }
 .roles .org { font: 400 clamp(2rem, 5vw, 3.2rem)/1 var(--serif); transition: color .2s; }
+.roles .org { display: flex; align-items: center; gap: 1rem; }
+.org-logo { width: 3rem; height: 3rem; flex: none; border-radius: .75rem; box-shadow: 0 10px 30px -12px rgba(0, 0, 0, .6); outline: 1px solid var(--line); outline-offset: -1px; }
+@media (max-width: 799px) { .org-logo { width: 2.6rem; height: 2.6rem; border-radius: .65rem; } }
 .roles .since { display: block; margin-top: .55rem; font: 400 .78rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--faint); }
 .roles .role { grid-column: 2; grid-row: 1; justify-self: end; text-align: right; max-width: 11rem; color: var(--muted); font-size: .8rem; line-height: 1.5; letter-spacing: .16em; text-transform: uppercase; }
 .roles .what { grid-column: 1 / -1; color: var(--muted); max-width: 40rem; }
