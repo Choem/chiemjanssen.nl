@@ -131,10 +131,11 @@ section.block { padding: 5rem 0; }
   padding: 1.75rem 0; text-decoration: none;
 }
 @media (min-width: 800px) {
-  .roles a { grid-template-columns: 14rem 1fr 11rem; padding: 2.25rem 0; }
+  .roles a { grid-template-columns: 14rem 1fr 12rem; padding: 2.25rem 0; }
 }
 .roles .org { font: 400 clamp(2rem, 5vw, 3.2rem)/1 var(--serif); transition: color .2s; }
-.roles .role { grid-column: 2; grid-row: 1; justify-self: end; color: var(--muted); font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; white-space: nowrap; }
+.roles .since { display: block; margin-top: .55rem; font: 400 .78rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--faint); }
+.roles .role { grid-column: 2; grid-row: 1; justify-self: end; text-align: right; max-width: 11rem; color: var(--muted); font-size: .8rem; line-height: 1.5; letter-spacing: .16em; text-transform: uppercase; }
 .roles .what { grid-column: 1 / -1; color: var(--muted); max-width: 40rem; }
 @media (min-width: 800px) {
   .roles .what { grid-column: 2; grid-row: 1; }
