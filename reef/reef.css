@@ -138,18 +138,3 @@ footer { border-top: 1px solid var(--line); }
 footer .wrap { padding-top: 2rem; padding-bottom: 3rem; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; color: var(--faint); font-size: .85rem; }
 footer a { color: var(--muted); }
 footer .links { display: flex; gap: 1.25rem; }
-
-/* Page transitions: pages crossfade and the shared pieces (Fitness and Reef icon, screenshot,
-   title, the cj logo) glide between the homepage and the project pages. Browsers without
-   cross-document View Transitions just navigate as before. */
-@media (prefers-reduced-motion: no-preference) {
-  @view-transition { navigation: auto; }
-}
-::view-transition-group(*) { animation-duration: .55s; animation-timing-function: cubic-bezier(.22, .8, .24, 1); }
-::view-transition-old(root), ::view-transition-new(root) { animation-duration: .3s; }
-::view-transition-old(reef-shot), ::view-transition-new(reef-shot) { width: 100%; height: 100%; object-fit: cover; overflow: clip; }
-
-.home img { view-transition-name: site-logo; }
-.hero-logo { view-transition-name: reef-icon; }
-.hero h1 { view-transition-name: reef-title; }
-.hero-bg { view-transition-name: reef-shot; }

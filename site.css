@@ -122,9 +122,8 @@ section.block { padding: 5rem 0; }
 .phone:nth-child(2) { transform: translateY(-2.5rem); }
 
 /* Involvement */
-.roles { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.roles { list-style: none; margin: 0; padding: 0; }
 .roles li { border-bottom: 1px solid var(--line); }
-.roles li:last-child { border-bottom: 0; }
 .roles a {
   display: grid; grid-template-columns: 1fr auto; gap: .35rem 1.5rem; align-items: center;
   padding: 1.75rem 0; text-decoration: none;
@@ -163,20 +162,3 @@ section.block { padding: 5rem 0; }
 footer { padding: 2rem 0 3rem; border-top: 1px solid var(--line); color: var(--faint); font-size: .85rem; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; }
 footer a { color: var(--muted); }
 @media (max-width: 799px) { .roles .role { align-self: start; margin-top: .65rem; } }
-
-/* Page transitions: pages crossfade and the shared pieces (Fitness and Reef icon, screenshot,
-   title, the cj logo) glide between the homepage and the project pages. Browsers without
-   cross-document View Transitions just navigate as before. */
-@media (prefers-reduced-motion: no-preference) {
-  @view-transition { navigation: auto; }
-}
-::view-transition-group(*) { animation-duration: .55s; animation-timing-function: cubic-bezier(.22, .8, .24, 1); }
-::view-transition-old(root), ::view-transition-new(root) { animation-duration: .3s; }
-::view-transition-old(reef-shot), ::view-transition-new(reef-shot) { width: 100%; height: 100%; object-fit: cover; overflow: clip; }
-
-.brand img { view-transition-name: site-logo; }
-.project.fitness .project-head img { view-transition-name: fitness-icon; }
-.project.fitness .phone:first-child { view-transition-name: fitness-shot; }
-.project.reef .project-head img { view-transition-name: reef-icon; }
-.project.reef h3 { view-transition-name: reef-title; }
-.project.reef .shot-wide { view-transition-name: reef-shot; }
