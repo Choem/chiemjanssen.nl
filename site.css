@@ -144,6 +144,13 @@ section.block { padding: 5rem 0; }
 .roles a:hover .org { color: var(--mint); }
 
 /* Contact + footer */
+.contact .elsewhere { margin: 2.25rem 0 0; }
+.linkedin {
+  display: inline-flex; align-items: center; gap: .55rem; padding: .6rem 1.15rem; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--panel); color: var(--muted); text-decoration: none; font-weight: 600; font-size: .95rem;
+  transition: color .2s, border-color .2s;
+}
+.linkedin:hover { color: var(--fg); border-color: var(--mint); }
 .contact { text-align: center; padding: 7rem 0 4rem; }
 .contact h2 { margin: 0 0 1.5rem; font: 400 clamp(2.6rem, 8vw, 5.5rem)/1 var(--serif); }
 .contact .mail {

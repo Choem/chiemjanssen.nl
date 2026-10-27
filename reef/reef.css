@@ -136,3 +136,4 @@ figcaption strong { color: var(--fg); font-weight: 600; display: block; }
 footer { border-top: 1px solid var(--line); }
 footer .wrap { padding-top: 2rem; padding-bottom: 3rem; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; color: var(--faint); font-size: .85rem; }
 footer a { color: var(--muted); }
+footer .links { display: flex; gap: 1.25rem; }
