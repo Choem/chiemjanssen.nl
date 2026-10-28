@@ -1,6 +1,6 @@
 /* Fitness pages: the app's Material 3 theme (dark-first, lime seed #9BE15D). */
 :root {
-  color-scheme: dark light;
+  color-scheme: dark;
   --surface: #0e1113;
   --surface-low: #161a16;
   --card: #22271f;
@@ -15,22 +15,21 @@
   --accent-text: #9be15d;
   --glow: rgba(126, 221, 0, .16);
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    --surface: #f8faf0;
-    --surface-low: #f0f3e6;
-    --card: #e9ecdf;
-    --card-high: #e1e5d6;
-    --on-surface: #1a1c16;
-    --muted: #464b3f;
-    --outline: #cdd3c2;
-    --primary: #3f6a00;
-    --on-primary: #ffffff;
-    --tonal: #cdebc3;
-    --on-tonal: #0f2a12;
-    --accent-text: #3f6a00;
-    --glow: rgba(110, 190, 20, .18);
-  }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --surface: #f8faf0;
+  --surface-low: #f0f3e6;
+  --card: #e9ecdf;
+  --card-high: #e1e5d6;
+  --on-surface: #1a1c16;
+  --muted: #464b3f;
+  --outline: #cdd3c2;
+  --primary: #3f6a00;
+  --on-primary: #ffffff;
+  --tonal: #cdebc3;
+  --on-tonal: #0f2a12;
+  --accent-text: #3f6a00;
+  --glow: rgba(110, 190, 20, .18);
 }
 
 * { box-sizing: border-box; }
