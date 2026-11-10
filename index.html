@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chiem Janssen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chiem Janssen · Hello World</title>
 <meta name="description" content="Software engineer and founder from the Netherlands. Localeo, D-care and Debugged, plus Fitness and Reef.">
-<meta name="theme-color" content="#07090c">
+<meta name="theme-color" content="#2a78d0">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/icon-180.png">
 <link rel="canonical" href="https://chiemjanssen.nl/">
@@ -14,90 +14,78 @@
 <link rel="alternate" hreflang="it" href="https://chiemjanssen.nl/it/">
 <link rel="alternate" hreflang="x-default" href="https://chiemjanssen.nl/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Chiem Janssen">
+<meta property="og:title" content="Chiem Janssen · Hello World">
 <meta property="og:description" content="Software engineer and founder from the Netherlands. Localeo, D-care and Debugged, plus Fitness and Reef.">
 <meta property="og:image" content="https://chiemjanssen.nl/assets/og-en.jpg">
 <meta property="og:url" content="https://chiemjanssen.nl/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600&display=swap">
-<link rel="stylesheet" href="/site.css">
-<script type="module" src="/assets/field.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap">
+<link rel="stylesheet" href="/assets/hello-world.css">
+<script>document.documentElement.classList.replace("no-js", "js")</script>
+<script src="/assets/hello-world.js" defer></script>
 </head>
 <body>
-<canvas class="field" data-preset="current" aria-hidden="true"></canvas>
-<div class="page">
-<div class="wrap">
-<header class="topbar">
-<a class="brand" href="/" aria-label="Chiem Janssen"><img src="/assets/logo.svg" width="40" height="40" alt=""></a>
+<a class="skip-first" href="#plain" data-skip>SKIP THE GAME</a>
+<main id="plain" class="plain">
+<header class="panel hero">
+<img class="pf" src="/assets/icon-512.png" width="128" height="128" alt="">
+<div class="hero-text">
+<p class="kicker">Software engineer and founder, the Netherlands</p>
+<h1>Chiem Janssen</h1>
+<p class="tag">Companies, apps and interactive art.</p>
+<div class="row"><button class="btn gold play" type="button" data-play>▶ PLAY HELLO WORLD</button><a class="btn" href="mailto:chiemjanssen@gmail.com">✉ WORK TOGETHER</a></div>
+</div>
 <nav class="lang"><strong><span class="full">English</span><span class="short">EN</span></strong><a href="/nl/" hreflang="nl" lang="nl" aria-label="Nederlands"><span class="full">Nederlands</span><span class="short">NL</span></a><a href="/it/" hreflang="it" lang="it" aria-label="Italiano"><span class="full">Italiano</span><span class="short">IT</span></a></nav>
 </header>
-<main>
-<section class="hero" data-field="ink">
-<p class="kicker">Software engineer and founder, the Netherlands</p>
-<h1>Chiem<br>Janssen</h1>
-<p class="tagline">Companies, apps and interactive art.</p>
-<a class="scroll-cue" href="#ventures">See the work</a>
+<section class="panel" id="ventures">
+<h2>Ventures</h2>
+<article class="item"><img src="/assets/orgs/localeo.svg" width="48" height="48" alt="" loading="lazy">
+<div><h3>Localeo</h3><p class="meta">Founder · Since 2026</p><p>Translations treated like software. Your team edits and approves in one place, then ships a versioned bundle your app pulls.</p><a class="btn" href="https://localeo.app" rel="noopener">localeo.app ▶</a></div></article>
+<article class="item"><img src="/assets/orgs/dcare.png" width="48" height="48" alt="" loading="lazy">
+<div><h3>D-care</h3><p class="meta">Investor / Technical Lead · Since 2024</p><p>AI and sensors that watch over sows day and night, so pig farmers act on heat and health in time. I lead the engineering and its delivery.</p><a class="btn" href="https://d-care.ai" rel="noopener">d-care.ai ▶</a></div></article>
+<article class="item"><img src="/assets/orgs/debugged.svg" width="48" height="48" alt="" loading="lazy">
+<div><h3>Debugged</h3><p class="meta">Co-founder · Since 2019</p><p>We automate and optimise business processes. Deeply technical and side by side with our clients, we build a better product together.</p><a class="btn" href="https://debugged.nl" rel="noopener">debugged.nl ▶</a></div></article>
 </section>
-
-<section class="block" id="ventures" data-field="warm">
-<h2 class="label">Ventures</h2>
-<article class="venture" style="--accent: #c8a6ff">
-<div class="venture-head"><img src="/assets/orgs/localeo.svg" width="56" height="56" alt=""><p class="project-kind">Since 2026</p><p class="venture-role">Founder</p></div>
-<h3>Localeo</h3>
-<p class="body">Translations treated like software. Your team edits and approves in one place, then ships a versioned bundle your app pulls.</p>
-<a class="more" href="https://localeo.app" rel="noopener">localeo.app</a>
-</article>
-<article class="venture" style="--accent: #7cf2d4">
-<div class="venture-head"><img src="/assets/orgs/dcare.png" width="56" height="56" alt=""><p class="project-kind">Since 2024</p><p class="venture-role">Investor / Technical Lead</p></div>
-<h3>D-care</h3>
-<p class="body">AI and sensors that watch over sows day and night, so pig farmers act on heat and health in time. I lead the engineering and its delivery.</p>
-<a class="more" href="https://d-care.ai" rel="noopener">d-care.ai</a>
-</article>
-<article class="venture" style="--accent: #ffd7a8">
-<div class="venture-head"><img src="/assets/orgs/debugged.svg" width="56" height="56" alt=""><p class="project-kind">Since 2019</p><p class="venture-role">Co-founder</p></div>
-<h3>Debugged</h3>
-<p class="body">We automate and optimise business processes. Deeply technical and side by side with our clients, we build a better product together.</p>
-<a class="more" href="https://debugged.nl" rel="noopener">debugged.nl</a>
-</article>
+<section class="panel" id="projects">
+<h2>Projects</h2>
+<article class="item"><img src="/fitness/img/icon.webp" width="48" height="48" alt="" loading="lazy">
+<div><h3>Fitness</h3><p class="meta">App for iPhone and Android</p><p>Workouts, food and weight in one private app. A daily target that adapts to your progress, a coach that runs on your phone, and no account.</p><a class="btn" href="/fitness/">See the app ▶</a></div></article>
+<article class="item"><img src="/reef/img/icon-180.png" width="48" height="48" alt="" loading="lazy">
+<div><h3>Reef</h3><p class="meta">Interactive installation</p><p>An endless reef that grows with every visitor. Answer a few playful questions and a real reef animal swims in, down to where it really lives. With weather, night, rare visitors and the damage we do to the water.</p><a class="btn" href="/reef/">Discover Reef ▶</a></div></article>
 </section>
-
-<section class="block" id="projects">
-<h2 class="label">Projects</h2>
-<article class="project fitness" data-field="fitness">
-<div>
-<div class="project-head"><img src="/fitness/img/icon.webp" width="56" height="56" alt=""><div><p class="project-kind">App for iPhone and Android</p></div></div>
-<h3>Fitness</h3>
-<p class="body">Workouts, food and weight in one private app. A daily target that adapts to your progress, a coach that runs on your phone, and no account.</p>
-<a class="more" href="/fitness/">See the app</a>
-</div>
-<div class="project-media duo" role="img" aria-label="Screenshots of the Fitness app">
-<div class="phone"><img src="/fitness/img/en/02_today.webp" width="660" height="1434" loading="lazy" alt=""></div>
-<div class="phone"><img src="/fitness/img/en/01_body.webp" width="660" height="1434" loading="lazy" alt=""></div>
-</div>
-</article>
-<article class="project reef flip" data-field="reef">
-<div>
-<div class="project-head"><img src="/reef/img/icon-180.png" width="56" height="56" alt=""><div><p class="project-kind">Interactive installation</p></div></div>
-<h3>Reef</h3>
-<p class="body">An endless reef that grows with every visitor. Answer a few playful questions and a real reef animal swims in, down to where it really lives. With weather, night, rare visitors and the damage we do to the water.</p>
-<a class="more" href="/reef/">Discover Reef</a>
-</div>
-<div class="project-media"><div class="shot-wide"><img src="/reef/img/reef-card.webp" width="1600" height="900" loading="lazy" alt="The shallow reef on a sunny day"></div></div>
-</article>
+<section class="panel" id="contact">
+<h2>WORK TOGETHER</h2>
+<p>Got a problem worth solving? I help with new products, consultancy and technical sparring.</p>
+<div class="row"><a class="btn gold" href="mailto:chiemjanssen@gmail.com">✉ chiemjanssen@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/chiemjanssen/" rel="me noopener">LinkedIn ▶</a></div>
 </section>
-
-<section class="contact" data-field="ink">
-<h2>Contact</h2>
-<a class="mail" href="mailto:chiemjanssen@gmail.com">chiemjanssen@gmail.com</a>
-<p class="elsewhere"><a class="linkedin" href="https://www.linkedin.com/in/chiemjanssen/" rel="me noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a></p>
-</section>
+<footer>&copy; Chiem Janssen</footer>
 </main>
-<footer>
-<span>&copy; Chiem Janssen</span>
-</footer>
+
+<div id="hw" class="hw" hidden>
+<canvas id="world" aria-hidden="true"></canvas>
+<div class="ui panel plate"><canvas id="face" width="128" height="112" aria-hidden="true"></canvas><div><b>CHIEM JANSSEN<i>LV 1337</i></b><span>Software engineer &amp; founder</span></div></div>
+<div class="ui side">
+<div class="panel mini"><div class="lbl"><span>HELLO WORLD</span><span id="cnt">0/6</span></div><canvas id="mini" aria-hidden="true"></canvas></div>
+<div class="btns"><button class="btn panel" id="menuBtn" type="button">MENU</button><a class="btn panel on" href="/" hreflang="en" lang="en" data-lang>EN</a><a class="btn panel" href="/nl/" hreflang="nl" lang="nl" data-lang>NL</a><a class="btn panel" href="/it/" hreflang="it" lang="it" data-lang>IT</a></div>
+</div>
+<div class="ui hint">WASD / ARROWS · CLICK TO WALK<br>E / ENTER TO TALK · M FOR MENU</div>
+<div class="ui panel dlg" id="dlg" role="dialog" aria-live="polite"><div class="pf"><span class="nm">CHIEM</span><canvas id="dPf" width="128" height="112" aria-hidden="true"></canvas></div><div><div class="tx" id="dTx"></div><div class="ch" id="dCh"></div></div></div>
+<div class="ui toast panel" id="toast" role="status"></div>
+<div class="ui menu" id="menu" role="dialog" aria-modal="true" aria-label="MENU">
+<div class="book">
+<div class="panel card who"><canvas id="menuPf" width="128" height="112" aria-hidden="true"></canvas><h2>CHIEM JANSSEN</h2><p>Software engineer &amp; founder, the Netherlands</p><dl class="kv"><dt>LEVEL</dt><dd>1337</dd><dt>CLASS</dt><dd>Engineer / Founder</dd><dt>HEIGHT</dt><dd>181 cm, just under the Dutch avg</dd><dt>LANG</dt><dd>EN · NL · IT</dd><dt>GUILDS</dt><dd>3 companies since 2019</dd></dl><div class="eq"><div><span>HEAD</span>Grey dad cap</div><div><span>BODY</span>Navy knit zip-up</div><div><span>ACC</span>Orange sling bag</div><div><span>FEET</span>White low-tops</div></div></div>
+<div class="panel card">
+<div class="tabs" role="tablist"><button type="button" data-p="skills" aria-selected="true">SKILLS</button><button type="button" data-p="quests" aria-selected="false">QUESTS</button><button type="button" data-p="contact" aria-selected="false">CONTACT</button><button type="button" class="x" id="menuX">✕ CLOSE</button></div>
+<div class="pane on" data-p="skills"><div class="lvl"><b>LV 1337</b><span>XP: OVER 9000 · NEXT LEVEL: N/A</span></div><div class="sk"><div>Full-stack engineering<small>Frontend, backend, and whatever's holding them together.</small></div><div class="bar"><i></i></div><em>MAX</em></div><div class="sk"><div>Debugging<small>Founded a company called Debugged. Case closed.</small></div><div class="bar"><i></i></div><em>MAX</em></div><div class="sk"><div>Founding companies<small>Three and counting. Sleep is optional.</small></div><div class="bar"><i></i></div><em>MAX</em></div><div class="sk"><div>AI &amp; sensors<small>Knows a sow is in heat before the farmer does.</small></div><div class="bar"><i></i></div><em>MAX</em></div><div class="sk"><div>Mobile apps<small>iPhone and Android. Zero accounts required.</small></div><div class="bar"><i></i></div><em>MAX</em></div><div class="sk"><div>Interactive art<small>Grew an entire reef without getting wet.</small></div><div class="bar"><i></i></div><em>MAX</em></div><div class="sk"><div>Shipping on Fridays<small>Not recommended. Done anyway.</small></div><div class="bar"><i></i></div><em>MAX</em></div><div class="sk"><div>Languages<small>English, Dutch, Italian and TypeScript.</small></div><div class="bar"><i></i></div><em>MAX</em></div><div class="sk"><div>Height<small>181 cm. Maxed out, says the doctor.</small></div><div class="bar"><i></i></div><em>MAX</em></div><div class="sk"><div>Cap game<small>Grey dad cap. Brim always forward.</small></div><div class="bar"><i></i></div><em>MAX</em></div></div>
+<div class="pane" data-p="quests"><div class="q" data-q="localeo"><div class="ic" style="background:#c8a6ff">L</div><div><h3>LOCALEO <span class="done">✓ VISITED</span></h3><p>Founder · since 2026</p></div><a href="https://localeo.app" target="_blank" rel="noopener">VISIT ▶</a></div><div class="q" data-q="dcare"><div class="ic" style="background:#7cf2d4">D</div><div><h3>D-CARE <span class="done">✓ VISITED</span></h3><p>Investor / Technical Lead · since 2024</p></div><a href="https://d-care.ai" target="_blank" rel="noopener">VISIT ▶</a></div><div class="q" data-q="debugged"><div class="ic" style="background:#ffd7a8">&lt;/&gt;</div><div><h3>DEBUGGED <span class="done">✓ VISITED</span></h3><p>Co-founder · since 2019</p></div><a href="https://debugged.nl" target="_blank" rel="noopener">VISIT ▶</a></div><div class="q" data-q="fitness"><div class="ic" style="background:#ff9ad2">F</div><div><h3>FITNESS <span class="done">✓ VISITED</span></h3><p>App · iPhone + Android</p></div><a href="/fitness/">VISIT ▶</a></div><div class="q" data-q="reef"><div class="ic" style="background:#5ff2ff">R</div><div><h3>REEF <span class="done">✓ VISITED</span></h3><p>Interactive installation</p></div><a href="/reef/">VISIT ▶</a></div></div>
+<div class="pane" data-p="contact"><div class="q"><div class="ic" style="background:#ffcc3a">✉</div><div><h3>WORK TOGETHER</h3><p>Got a problem worth solving? I help with new products, consultancy and technical sparring.</p></div><a href="mailto:chiemjanssen@gmail.com">EMAIL ▶</a></div><div class="q"><div class="ic" style="background:#7fb8ff">in</div><div><h3>LINKEDIN</h3><p>The serious version.</p></div><a href="https://www.linkedin.com/in/chiemjanssen/" target="_blank" rel="me noopener">OPEN ▶</a></div><p class="note">Prefer a plain page? <button type="button" class="linkish" data-skip>SKIP THE GAME</button></p></div>
 </div>
 </div>
+</div>
+<div class="ui title" id="title"><div><div class="logo">HELLO<br><span>WORLD</span></div><div class="sub">THE PORTFOLIO OF CHIEM JANSSEN</div><div class="trole">Software engineer &amp; founder</div><div class="press">CLICK OR PRESS ANY KEY</div><div class="tlinks"><a href="mailto:chiemjanssen@gmail.com">✉ WORK TOGETHER</a><button type="button" data-skip>SKIP THE GAME</button></div></div></div>
+</div>
+<script type="application/json" id="hw-data">{"info": {"localeo": {"t": "This is Localeo, my newest company (2026). Translations treated like software: your team edits and approves in one place, then ships a versioned bundle your app pulls.", "cta": "VISIT LOCALEO.APP"}, "debugged": {"t": "Debugged! I co-founded it in 2019. We automate and optimise business processes, deeply technical and side by side with our clients.", "cta": "VISIT DEBUGGED.NL"}, "dcare": {"t": "D-care, where I'm investor and technical lead (since 2024). Every sow wears an ear tag that talks to the gateways with the antennas. AI watches over them day and night, so farmers act on heat and health in time.", "cta": "VISIT D-CARE.AI"}, "fitness": {"t": "My Fitness app for iPhone and Android. Workouts, food and weight in one private app, a coach that runs on your phone, and no account.", "cta": "SEE THE APP"}, "reef": {"t": "Reef: an endless reef that grows with every visitor. Answer a few playful questions and a real reef animal swims in, down to where it really lives.", "cta": "DIVE INTO REEF"}, "mail": {"t": "A mailbox! Got a problem worth solving, a product to build, or need a technical sparring partner? Drop me a letter and let's work on it together.", "cta": "LET'S WORK TOGETHER"}, "sign": {"t": "WELCOME TO HELLO WORLD. Walk with WASD or the arrows, or just click where you want to go. Bump into doors to visit. Press M for my stats and skills."}, "fountain": {"t": "You toss a coin into the fountain. Luck +1. (Every company needs some.)"}, "mill": {"t": "A windmill. Very Dutch. It powers absolutely nothing, but it looks great."}, "shark": {"t": "Whoa, you spotted a whale shark! The biggest fish in the sea, and completely harmless. In Reef, rare visitors like this one turn up now and then too.", "cta": "VISIT REEF"}, "intro": {"t": "Hey, welcome! I'm Chiem, a software engineer and founder from the Netherlands. This island is my portfolio. Walk around and visit my work!"}}, "links": {"localeo": "https://localeo.app", "debugged": "https://debugged.nl", "dcare": "https://d-care.ai", "fitness": "/fitness/", "reef": "/reef/", "shark": "/reef/", "mail": "mailto:chiemjanssen@gmail.com"}, "later": "LATER", "ok": "OK!", "toastAll": "ALL PLACES VISITED! ★", "toastShark": "★ RARE SIGHTING: WHALE SHARK"}</script>
 </body>
 </html>

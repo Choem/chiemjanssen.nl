@@ -1,7 +1,7 @@
 # Hello World: the homepage as a DS-style RPG world
 
 Date: 2026-11-10
-Status: design, approved in conversation. Not yet built.
+Status: live on chiemjanssen.nl since 2026-11-10 (shipped straight to the homepage at Chiem's request, without the preview step).
 Prototype: `_docs/superpowers/prototypes/hello-world/prototype.html` (self-contained, open in a browser). `hero.js` next to it is the character renderer it inlines. Like `_src/`, the prototype is local only and kept out of git via `.git/info/exclude`: scripts and tooling stay out of the repo.
 
 The docs live under `_docs/` on purpose: GitHub Pages runs Jekyll, which skips folders starting with `_`, so specs and prototypes are never published.
